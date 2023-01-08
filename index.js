@@ -6,6 +6,7 @@ const stripe = require("stripe")(process.env.SECRET_KEY)
 const Contact = require("./backend/models/Contact")
 const productRoutes = require("./backend/routes/productRoutes");
 const connectDB = require("./backend/config/db");
+const { getProducts } = require("./backend/controller/productControllers");
 
 // Initializing APP
 const app = express();
@@ -56,7 +57,6 @@ app.post("/payment", (req, res) => {
   }).then(result => res.status(200).json(result)).catch(err => console.log(err))
 
 })
-
 
 app.use("/api/products", productRoutes);
 
