@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "https://shivamthakur0010/vercel.com",
+  "proxy": "https://food-hub-seven.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
